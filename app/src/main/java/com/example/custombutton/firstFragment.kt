@@ -172,14 +172,8 @@ class FirstFragment : Fragment(),PokemonClick {
 
         }
 
-        /**
-         * Navigate to the ThirdFragment
-         */
 
-        view.image_btn.setOnClickListener {
-            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment()
-            Navigation.findNavController(requireView()).navigate(action)
-        }
+
 
         return view
     }
