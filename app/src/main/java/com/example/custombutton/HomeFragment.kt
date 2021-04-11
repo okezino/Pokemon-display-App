@@ -1,7 +1,6 @@
 package com.example.custombutton
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,8 +11,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.custombutton.util.Fetchdata
-import kotlinx.android.synthetic.main.fragment_blank.*
-import kotlinx.android.synthetic.main.fragment_blank.view.*
+import kotlinx.android.synthetic.main.home_fragment.*
+import kotlinx.android.synthetic.main.home_fragment.view.*
+
 
 /**
  * This is the Home Fragment that display all the Pokemon Characters
@@ -71,7 +71,7 @@ class FirstFragment : Fragment(),PokemonClick {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view =  inflater.inflate(R.layout.fragment_blank, container, false)
+        var view =  inflater.inflate(R.layout.home_fragment, container, false)
 
         /**
          * the next button calls the pokemonPojo data using the next offset value {nextPokemonPage }

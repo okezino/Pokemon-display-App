@@ -9,7 +9,7 @@
         android:id="@+id/firstFragment"
         android:name="com.example.custombutton.FirstFragment"
         android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" >
+        tools:layout="@layout/home_fragment" >
         <action
             android:id="@+id/firstCall"
             app:destination="@id/secondFragment"
@@ -25,9 +25,9 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.custombutton.SecondFragment"
+        android:name="com.example.custombutton.ProfileFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" >
+        tools:layout="@layout/fragment_profile" >
         <argument
             android:name="hold"
             app:argType="string"
